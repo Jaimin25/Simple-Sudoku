@@ -1,0 +1,124 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+#new_game{
+    font-family:arial;
+    display: inline-block;
+    border: 2px solid rgb(0, 199, 10);
+    border-radius: 5px;
+    margin:10px auto;
+    padding: 10px;
+}
+
+#new_game:hover{
+    background-color: rgb(141, 255, 146);
+    cursor: pointer;
+    transition: 0.20s;
+}
+
+.option{
+    font-family: arial;
+    display: inline-block;
+    border-radius: 5px;
+
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgb(0, 179, 255);
+}
+
+.option:hover, .option.active{
+    background-color: rgb(204, 231, 255);
+    cursor: pointer;
+    transition: 0.20s;
+
+}
+
+#sudoku_board{
+    height: 540px;
+    width: 540px;
+    display: flex;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+#options{
+    height: 50px;
+    width: 450px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.option_cell{
+    width: 44px;
+    height: 44px;
+    border: 1px solid skyblue;
+    margin: 2px;
+
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell{
+    width: 58px;
+    height: 58px;
+    border: 1px solid lightskyblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filled_cell{
+    background-color: aliceblue;
+}
+
+.empty_cell:hover, .option_cell:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+
+.active_cell, .active_cell:hover{
+    background-color: skyblue;
+}
+
+.horizontal_border{
+    border-bottom: 1px solid darkblue;
+}
+
+.vertical_border{
+    border-right: 1px solid darkblue;
+}
+
+/* Your existing styles here */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #sudoku_board {
+      width: 90%;
+      max-width: none;
+    }
+    
+    #options {
+      width: 90%;
+      max-width: none;
+    }
+    
+    /* Adjust other styles as needed for smaller screens */
+  }
+  
